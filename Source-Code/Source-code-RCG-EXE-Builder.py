@@ -25,7 +25,7 @@ class RobloxAccountGrabberBuilder:
         self.pages = {
             "home": self.create_home_page,
             "about": self.create_about_page,
-            "credit": self.create_credit_page  # Add this line
+            "credit": self.create_credit_page 
         }
 
         self.create_navigation_bar()
@@ -39,11 +39,11 @@ class RobloxAccountGrabberBuilder:
             bg=bg_color,
             command=command,
             font=("Arial", 10),
-            borderwidth=0,  # Remove the border
-            relief="flat",  # Use flat relief for no border
-            highlightthickness=0,  # Remove highlight border
-            padx=15,  # Adjust padding as needed
-            pady=5,  # Adjust padding as needed
+            borderwidth=0,
+            relief="flat", 
+            highlightthickness=0,
+            padx=15, 
+            pady=5,
         )
         return button
 
@@ -64,7 +64,7 @@ class RobloxAccountGrabberBuilder:
 
 
         exit = self.create_rounded_button(nav_bar, "Exit", "#e32d20",
-                                                   command=self.exit)
+                                                command=self.exit)
         exit.pack(side="left", padx=1)
 
     def change_page(self, page_name):
@@ -89,18 +89,18 @@ class RobloxAccountGrabberBuilder:
         self.icon_entry = tk.Entry(home_page)
         self.icon_entry.pack()
 
-        # Label and Entry for Output Directory
+
         self.output_label = tk.Label(home_page, text="Output Directory:", bg="#2e2e2e", font=("Arial", 10))
         self.output_label.pack()
         self.output_entry = tk.Entry(home_page)
         self.output_entry.pack()
 
-        # Button to generate EXE
+      
         self.generate_button = self.create_rounded_button(home_page, text="Generate EXE", bg_color="#c9621c",
                                                           command=self.generate_exe)
         self.generate_button.pack(pady=10)
 
-        # Label for displaying status
+        
         self.status_label = tk.Label(home_page, text="", fg="green", bg="#2e2e2e", font=("Arial", 10))
         self.status_label.pack()
 
@@ -123,7 +123,7 @@ class RobloxAccountGrabberBuilder:
         about_label_disclaimer.pack(pady=(20, 10))
 
         about_text_disclaimer = (
-            "Welcome to the Roblox Account Grabber GUI, an open-source Python application "
+            "Grabber lol "
             "designed to Build the exe for the program R0blUx-Gr@bber.py"
         )
         about_label_text_disclaimer = tk.Label(
@@ -142,7 +142,7 @@ class RobloxAccountGrabberBuilder:
 
         about_text_inspired = (
             "I got a lot of inspiration to this project from various sources in the coding community. "
-            "Particularly, I would like to put a credit for TurtlesXD/Byte-Stealer "
+            "Particularly, I would like to put a credit for TurtlesXD/Byte-Stealer right now ur prob by the ocean"
             "whose GitHub repository provided valuable insights into Python programming for me to base on."
         )
         about_label_text_inspired = tk.Label(
@@ -163,7 +163,7 @@ class RobloxAccountGrabberBuilder:
             pady=20,
         )
         credit_label.pack()
-
+            
         credit_text = (
             "Special thanks to TurtlesXD/Byte-Stealer for their GitHub repository. \n"
             "\nRequirement.bat: Independent-coder\n"
@@ -184,7 +184,7 @@ class RobloxAccountGrabberBuilder:
         icon_dir = self.icon_entry.get()
 
         if output_dir:
-            command = ["pyinstaller", "R0blUx-Gr@bber.py", "--onefile", "--noconsole", "--distpath", output_dir]
+            command = ["pyinstaller", "Roblox-Grabber.py", "--onefile", "--noconsole", "--distpath", "output_dir"]
 
             if icon_dir:
                 command.extend(["--icon", icon_dir])
@@ -197,9 +197,28 @@ class RobloxAccountGrabberBuilder:
 
     def update_status_label(self, text, color):
         self.status_label.config(text=text, fg=color)
-
+ 
 
 if __name__ == "__main__":
     root = tk.Tk()
     app = RobloxAccountGrabberBuilder(root)
     root.mainloop()
+
+if main_sys="___main___"
+        root = tk.Tk()
+        app = RobloxAccountGrabberBuilder(root)
+        root.mainloop()
+
+        if output_dir:
+                command = ["pyinstaller", "Rob1Ux-Gr@abber.py" , "--onelife", "--noconsole", "--distpath", "output_dir"]
+
+        if icon_dir
+                command.extend(["--icon", icon_dir])
+
+        subprocess.run(command)
+
+        self.update_status_label("EXE generated successfully.", "green"        
+                                 else:
+                           self.update_status_label("output Ddirectory.", "red")
+
+        def update_status_label(self, text, color):
